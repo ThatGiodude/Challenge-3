@@ -6,12 +6,11 @@ var LowerCases = "abcdefghijklmnopqrstuvwxyz";
 var Numbers = "1234567890";
 // Write password to the #password input
 function writePassword() {
-  var password 
   var passwordText = document.querySelector("#password");
   var numbers = confirm("Do you want numbers in your password?");
   var lowercases = confirm("Do you want your password to contain lower cases?");
   var uppercases = confirm("Do you want your password to contain Upper Cases?");
-  var specialcharacters = confirm("Do you want your password to contain Special Characters?");
+  var specialcharacters = prompt("How many special characters do you want to use?");
   var passwordLength = prompt("How long do you want your password to be?");
 
   var minimumCount = 0;
